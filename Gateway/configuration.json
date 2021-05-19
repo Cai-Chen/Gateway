@@ -1,0 +1,20 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/resource/get",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "resourceapi.dev.com.au",
+          "Port": 443
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/dog",
+      "UpstreamHttpMethod": [ "GET" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://gateway.dev.com.au"
+  }
+
+}
